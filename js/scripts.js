@@ -1,5 +1,6 @@
 var text1, text2, text3, text4, text5, text6, text7, text8, text9, box1Win, box2Win, box3Win, box4Win, box5Win, box6Win, box7Win, box8Win, box9Win;
 var boxes3 = [text1, text2, text3, text4, text5, text6, text7, text8, text9];
+var boxesArr = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
 var answers3 = [8, 1, 6, 3, 5, 7, 4, 9, 2];
 
 function Square(squareSize, solved) {
@@ -35,16 +36,30 @@ function isCorrect(_val, _answer) {
   };
 };
 
+function allFilled() {
+  for (var i = 1; i == boxesArr.length; i++) {
+    boxesArr[i].empty = false;
+    console.log(boxesArr[i]);
+  };
+
+  if ((box1.empty === false) && (box2.empty === false) && (box3.empty === false) && (box4.empty === false) && (box5.empty === false) && (box6.empty === false) && (box7.empty === false) && (box8.empty === false) && (box9.empty === false)) {
+    return true;
+  };
+};
+
 function victory() {
-  if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true))
-  return true;
-}
+  if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true)) {
+    return true;
+  };
+};
 
 
 
 /////////////////////line in the sand/////////////////////////
 $(document).ready(function() {
-  var text1, text2, text3, text4, text5, text6, text7, text8, text9;
+  var text1, text2, text3, text4, text5, text6, text7, text8, text9, winner;
+
+  var newSquare = new Square(boxes3, 3, false);
 
   $("#form1").submit(function(event) {
     event.preventDefault();
@@ -183,9 +198,22 @@ $(document).ready(function() {
     console.log(box9Win);
   });
 
-  var winner = victory();
-  if (winner === true);
-    return "You win!";
+  while (newSquare.solved === false) {
+    console.log(newSquare.solved);
+    if (allFilled() && victory()) {
+      console.log(allFilled());
+      console.log(victory());
+      newSquare.solved = true;
+    };
+    if (newSquare.solved === true) {
+      winner = "You win!"
+      return winner;
+    };
+  };
+
+  // var winner = victory();
+  // if (winner === true);
+  //   return "You win!";
 
   $(".win-message").text(winner);
 });
