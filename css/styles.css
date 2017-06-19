@@ -20,10 +20,10 @@ input {
   text-align: center;
 }
 
-input.wrong {
-  border: 1px solid red;
+.wrong {
+  border: 2px solid red;
 }
 
-input.right {
-  border: 1px solid green;
+.right {
+  border: 2px solid green;
 }
