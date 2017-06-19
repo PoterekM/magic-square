@@ -1,4 +1,4 @@
-var text1, text2, text3, text4, text5, text6, text7, text8, text9;
+var text1, text2, text3, text4, text5, text6, text7, text8, text9, box1Win, box2Win, box3Win, box4Win, box5Win, box6Win, box7Win, box8Win, box9Win;
 var boxes3 = [text1, text2, text3, text4, text5, text6, text7, text8, text9];
 var answers3 = [8, 1, 6, 3, 5, 7, 4, 9, 2];
 
@@ -34,6 +34,12 @@ function isCorrect(_val, _answer) {
     return false;
   };
 };
+
+function victory() {
+  if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true))
+  return true;
+}
+
 
 
 /////////////////////line in the sand/////////////////////////
@@ -176,4 +182,10 @@ $(document).ready(function() {
     var box9Win = isCorrect(text9, box9.answer);
     console.log(box9Win);
   });
+
+  var winner = victory();
+  if (winner === true);
+    return "You win!";
+
+  $(".win-message").text(winner);
 });
