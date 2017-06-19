@@ -16,6 +16,14 @@ form {
 input {
   width: inherit;
   height: inherit;
-  font-size: 48px;
+  font-size: 64px;
   text-align: center;
+}
+
+input.wrong {
+  border: 1px solid red;
+}
+
+input.right {
+  border: 1px solid green;
 }
