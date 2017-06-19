@@ -53,6 +53,8 @@ $(document).ready(function() {
       $("input#text1").addClass("wrong");  // change box border to red
       $("#text1").val("");
     };
+    var box1Win = isCorrect(text1, box1.answer);
+    console.log(box1Win);
   });
 
   $("#form2").submit(function(event) {
@@ -66,6 +68,8 @@ $(document).ready(function() {
       $("input#text2").addClass("wrong");
       $("#text2").val("");
     };
+    var box2Win = isCorrect(text2, box2.answer);
+    console.log(box2Win);
   });
 
   $("#form3").submit(function(event) {
@@ -79,6 +83,8 @@ $(document).ready(function() {
       $("input#text3").addClass("wrong");
       $("#text3").val("");
     };
+    var box3Win = isCorrect(text3, box3.answer);
+    console.log(box3Win);
   });
 
   $("#form4").submit(function(event) {
@@ -92,6 +98,8 @@ $(document).ready(function() {
       $("input#text4").addClass("wrong");
       $("#text4").val("");
     };
+    var box4Win = isCorrect(text4, box4.answer);
+    console.log(box4Win);
   });
 
   $("#form5").submit(function(event) {
@@ -105,6 +113,8 @@ $(document).ready(function() {
       $("input#text5").addClass("wrong");
       $("#text5").val("");
     };
+    var box5Win = isCorrect(text5, box5.answer);
+    console.log(box5Win);
   });
 
   $("#form6").submit(function(event) {
@@ -118,6 +128,8 @@ $(document).ready(function() {
       $("input#text6").addClass("wrong");
       $("#text6").val("");
     };
+    var box6Win = isCorrect(text6, box6.answer);
+    console.log(box6Win);
   });
 
   $("#form7").submit(function(event) {
@@ -131,6 +143,8 @@ $(document).ready(function() {
       $("input#text7").addClass("wrong");
       $("#text7").val("");
     };
+    var box7Win = isCorrect(text7, box7.answer);
+    console.log(box7Win);
   });
 
   $("#form8").submit(function(event) {
@@ -144,6 +158,8 @@ $(document).ready(function() {
       $("input#text8").addClass("wrong");
       $("#text8").val("");
     };
+    var box8Win = isCorrect(text8, box8.answer);
+    console.log(box8Win);
   });
 
   $("#form9").submit(function(event) {
@@ -157,5 +173,7 @@ $(document).ready(function() {
       $("input#text9").addClass("wrong");
       $("#text9").val("");
     };
+    var box9Win = isCorrect(text9, box9.answer);
+    console.log(box9Win);
   });
 });
