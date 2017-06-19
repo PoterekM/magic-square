@@ -57,40 +57,96 @@ $(document).ready(function() {
   $("#form2").submit(function(event) {
     event.preventDefault();
     text2 = parseInt($("input#text2").val());
+    if (isCorrect(text2, box2.answer)) {
+      console.log(isCorrect(text2, box2.answer));
+      $("td#cell2").addClass("right");
+    } else {
+      console.log(isCorrect(text2, box2.answer));
+      $("td#cell2").addClass("wrong");
+    };
   });
 
   $("#form3").submit(function(event) {
     event.preventDefault();
     text3 = parseInt($("input#text3").val());
+    if (isCorrect(text3, box3.answer)) {
+      console.log(isCorrect(text3, box3.answer));
+      $("td#cell3").addClass("right");
+    } else {
+      console.log(isCorrect(text3, box3.answer));
+      $("td#cell3").addClass("wrong");
+    };
   });
 
   $("#form4").submit(function(event) {
     event.preventDefault();
     text4 = parseInt($("input#text4").val());
+    if (isCorrect(text4, box4.answer)) {
+      console.log(isCorrect(text4, box4.answer));
+      $("td#cell4").addClass("right");
+    } else {
+      console.log(isCorrect(text4, box4.answer));
+      $("td#cell4").addClass("wrong");
+    };
   });
 
   $("#form5").submit(function(event) {
     event.preventDefault();
     text5 = parseInt($("input#text5").val());
+    if (isCorrect(text5, box5.answer)) {
+      console.log(isCorrect(text5, box5.answer));
+      $("td#cell5").addClass("right");
+    } else {
+      console.log(isCorrect(text5, box5.answer));
+      $("td#cell5").addClass("wrong");
+    };
   });
 
   $("#form6").submit(function(event) {
     event.preventDefault();
     text6 = parseInt($("input#text6").val());
+    if (isCorrect(text6, box6.answer)) {
+      console.log(isCorrect(text6, box6.answer));
+      $("td#cell6").addClass("right");
+    } else {
+      console.log(isCorrect(text6, box6.answer));
+      $("td#cell6").addClass("wrong");
+    };
   });
 
   $("#form7").submit(function(event) {
     event.preventDefault();
     text7 = parseInt($("input#text7").val());
+    if (isCorrect(text7, box7.answer)) {
+      console.log(isCorrect(text7, box7.answer));
+      $("td#cell7").addClass("right");
+    } else {
+      console.log(isCorrect(text7, box7.answer));
+      $("td#cell7").addClass("wrong");
+    };
   });
 
   $("#form8").submit(function(event) {
     event.preventDefault();
     text8 = parseInt($("input#text8").val());
+    if (isCorrect(text8, box8.answer)) {
+      console.log(isCorrect(text8, box8.answer));
+      $("td#cell8").addClass("right");
+    } else {
+      console.log(isCorrect(text8, box8.answer));
+      $("td#cell8").addClass("wrong");
+    };
   });
 
   $("#form9").submit(function(event) {
     event.preventDefault();
     text9 = parseInt($("input#text9").val());
+    if (isCorrect(text9, box9.answer)) {
+      console.log(isCorrect(text9, box9.answer));
+      $("td#cell9").addClass("right");
+    } else {
+      console.log(isCorrect(text9, box9.answer));
+      $("td#cell9").addClass("wrong");
+    };
   });
 });
