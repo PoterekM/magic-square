@@ -20,6 +20,10 @@ input {
   text-align: center;
 }
 
+input::placeholder {
+    color: rgba(211, 211, 211, 0.5);
+}
+
 .wrong {
   /*border: 2px solid red;*/
   background-color: rgb(255, 230, 230);
