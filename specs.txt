@@ -1,0 +1,35 @@
+What we need
+
+The program generates a 3 x 3 square.
+
+The program will give a single starting number in its correct position.
+
+The program allows the user to enter numbers into the boxes in the square.
+
+The individual boxes should know whether they're empty or full.
+
+The program will determine if a user-inputted number is correct or not.
+
+The program will clear the box and give an indicator if the inputted number is wrong.
+
+The program will alert the user when they've solved the square correctly.
+
+
+
+What we want
+
+The program will indicate a right answer by outlining the box in green and a wrong answer by outlining the box in red.
+
+Once the user has solved a square, the program will generate a square of increasing complexity (e.g. a 5 x 5 after a 3 x 3).
+
+
+
+Things on our wishlist
+
+The program sets a timer and times the user when they start playing.
+
+The program returns to the user how long it took them to complete the square.
+
+The program tallies the number of wrong answers.
+
+The program generates the solution via a programmed algorithm rather than it being hard-coded.
