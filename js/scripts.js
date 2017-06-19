@@ -47,10 +47,11 @@ $(document).ready(function() {
     console.log(box1.answer);
     if (isCorrect(text1, box1.answer)) {
       console.log(isCorrect(text1, box1.answer));
-      $("td#cell1").addClass("right");  // change box border to green
+      $("input#text1").addClass("right");  // change box border to green
     } else {
       console.log(isCorrect(text1, box1.answer));
-      $("td#cell1").addClass("wrong");  // change box border to red
+      $("input#text1").addClass("wrong");  // change box border to red
+      $("#text1").val("");
     };
   });
 
@@ -59,10 +60,11 @@ $(document).ready(function() {
     text2 = parseInt($("input#text2").val());
     if (isCorrect(text2, box2.answer)) {
       console.log(isCorrect(text2, box2.answer));
-      $("td#cell2").addClass("right");
+      $("input#text2").addClass("right");
     } else {
       console.log(isCorrect(text2, box2.answer));
-      $("td#cell2").addClass("wrong");
+      $("input#text2").addClass("wrong");
+      $("#text2").val("");
     };
   });
 
@@ -71,10 +73,11 @@ $(document).ready(function() {
     text3 = parseInt($("input#text3").val());
     if (isCorrect(text3, box3.answer)) {
       console.log(isCorrect(text3, box3.answer));
-      $("td#cell3").addClass("right");
+      $("input#text3").addClass("right");
     } else {
       console.log(isCorrect(text3, box3.answer));
-      $("td#cell3").addClass("wrong");
+      $("input#text3").addClass("wrong");
+      $("#text3").val("");
     };
   });
 
@@ -83,10 +86,11 @@ $(document).ready(function() {
     text4 = parseInt($("input#text4").val());
     if (isCorrect(text4, box4.answer)) {
       console.log(isCorrect(text4, box4.answer));
-      $("td#cell4").addClass("right");
+      $("input#text4").addClass("right");
     } else {
       console.log(isCorrect(text4, box4.answer));
-      $("td#cell4").addClass("wrong");
+      $("input#text4").addClass("wrong");
+      $("#text4").val("");
     };
   });
 
@@ -95,10 +99,11 @@ $(document).ready(function() {
     text5 = parseInt($("input#text5").val());
     if (isCorrect(text5, box5.answer)) {
       console.log(isCorrect(text5, box5.answer));
-      $("td#cell5").addClass("right");
+      $("input#text5").addClass("right");
     } else {
       console.log(isCorrect(text5, box5.answer));
-      $("td#cell5").addClass("wrong");
+      $("input#text5").addClass("wrong");
+      $("#text5").val("");
     };
   });
 
@@ -107,10 +112,11 @@ $(document).ready(function() {
     text6 = parseInt($("input#text6").val());
     if (isCorrect(text6, box6.answer)) {
       console.log(isCorrect(text6, box6.answer));
-      $("td#cell6").addClass("right");
+      $("input#text6").addClass("right");
     } else {
       console.log(isCorrect(text6, box6.answer));
-      $("td#cell6").addClass("wrong");
+      $("input#text6").addClass("wrong");
+      $("#text6").val("");
     };
   });
 
@@ -119,10 +125,11 @@ $(document).ready(function() {
     text7 = parseInt($("input#text7").val());
     if (isCorrect(text7, box7.answer)) {
       console.log(isCorrect(text7, box7.answer));
-      $("td#cell7").addClass("right");
+      $("input#text7").addClass("right");
     } else {
       console.log(isCorrect(text7, box7.answer));
-      $("td#cell7").addClass("wrong");
+      $("input#text7").addClass("wrong");
+      $("#text7").val("");
     };
   });
 
@@ -131,10 +138,11 @@ $(document).ready(function() {
     text8 = parseInt($("input#text8").val());
     if (isCorrect(text8, box8.answer)) {
       console.log(isCorrect(text8, box8.answer));
-      $("td#cell8").addClass("right");
+      $("input#text8").addClass("right");
     } else {
       console.log(isCorrect(text8, box8.answer));
-      $("td#cell8").addClass("wrong");
+      $("input#text8").addClass("wrong");
+      $("#text8").val("");
     };
   });
 
@@ -143,10 +151,11 @@ $(document).ready(function() {
     text9 = parseInt($("input#text9").val());
     if (isCorrect(text9, box9.answer)) {
       console.log(isCorrect(text9, box9.answer));
-      $("td#cell9").addClass("right");
+      $("input#text9").addClass("right");
     } else {
       console.log(isCorrect(text9, box9.answer));
-      $("td#cell9").addClass("wrong");
+      $("input#text9").addClass("wrong");
+      $("#text9").val("");
     };
   });
 });
