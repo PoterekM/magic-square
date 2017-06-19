@@ -10,75 +10,87 @@
   <body>
     <div class="container-fluid">
       <header class="jumbotron">
+        <img src="img/magic-square-2.jpg" alt="Making a magic square" />
         <h1>Magic Square</h1>
+        <h2>Some subheading goes here</h2>
       </header>
       <div class="container main">
-        <div class="rules">
-          <!-- rules go here -->
-        </div>
-        <table id="square">
-          <thead>
-          </thead>
-          <tbody>
-            <tr id="row1">
-              <td id="cell1">
-                <form id="form1">
-                  <input type="text" name="box" id="text1">
-                </form>
-              </td>
-              <td id="cell2">
-                <form id="form2">
-                  <input type="text" name="box" id="text2" placeholder="1">
-                </form>
-              </td>
-              <td id="cell3">
-                <form id="form3">
-                  <input type="text" name="box" id="text3">
-                </form>
-              </td>
-            </tr>
-            <tr id="row2">
-              <td id="cell4">
-                <form id="form4">
-                  <input type="text" name="box" id="text4">
-                </form>
-              </td>
-              <td id="cell5">
-                <form id="form5">
-                  <input type="text" name="box" id="text5">
-                </form>
-              </td>
-              <td id="cell6">
-                <form id="form6">
-                  <input type="text" name="box" id="text6">
-                </form>
-              </td>
-            </tr>
-            <tr id="row3">
-              <td id="cell7">
-                <form id="form7">
-                  <input type="text" name="box" id="text7">
-                </form>
-              </td>
-              <td id="cell8">
-                <form id="form8">
-                  <input type="text" name="box" id="text8">
-                </form>
-              </td>
-              <td id="cell9">
-                <form id="form9">
-                  <input type="text" name="box" id="text9">
-                </form>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="well win-message">
+        <div class="row">
+          <div class="rules">
+            <h3>Rules</h3>
+            <ul>
+              <li>All rows and columns must add up to the same number.</li>
+              <li>Digits cannot be repeated.</li>
+              <li>Press enter after each entry.</li>
+              <li>Incorrect entries are displayed in red.</li>
+              <li>Correct entries are displayed with a green background.</li>
+            </ul>
+          </div> <!-- rules column closing -->
+          <div class="table">
+            <table id="square">
+              <thead>
+              </thead>
+              <tbody>
+                <tr id="row1">
+                  <td id="cell1">
+                    <form id="form1">
+                      <input type="text" name="box" id="text1">
+                    </form>
+                  </td>
+                  <td id="cell2">
+                    <form id="form2">
+                      <input type="text" name="box" id="text2" placeholder="1">
+                    </form>
+                  </td>
+                  <td id="cell3">
+                    <form id="form3">
+                      <input type="text" name="box" id="text3">
+                    </form>
+                  </td>
+                </tr>
+                <tr id="row2">
+                  <td id="cell4">
+                    <form id="form4">
+                      <input type="text" name="box" id="text4">
+                    </form>
+                  </td>
+                  <td id="cell5">
+                    <form id="form5">
+                      <input type="text" name="box" id="text5">
+                    </form>
+                  </td>
+                  <td id="cell6">
+                    <form id="form6">
+                      <input type="text" name="box" id="text6">
+                    </form>
+                  </td>
+                </tr>
+                <tr id="row3">
+                  <td id="cell7">
+                    <form id="form7">
+                      <input type="text" name="box" id="text7">
+                    </form>
+                  </td>
+                  <td id="cell8">
+                    <form id="form8">
+                      <input type="text" name="box" id="text8">
+                    </form>
+                  </td>
+                  <td id="cell9">
+                    <form id="form9">
+                      <input type="text" name="box" id="text9">
+                    </form>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="well win-message">
 
-      </div>
 
-    </div>
-
+          </div>
+        </div><!-- row closing main -->
+      </div> <!-- container main -->
+    </div> <!-- container closing -->
   </body>
 </html>

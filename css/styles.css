@@ -1,5 +1,39 @@
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 68, 204, 0.8);
+}
+
+.jumbotron img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.30;
+}
+
+.jumbotron h1 {
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  color: #e6eeff;
+}
+
+.jumbotron h2 {
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  color: #b3ccff;
+}
+
+.table {
+  background-image: url("../img/floating-numbers.jpg");
+  repeat: none;
+}
+
 table {
-  margin: 200px auto auto auto;
+  margin: 0px auto 40px auto;
 }
 
 td {
@@ -32,4 +66,15 @@ input::placeholder {
 .right {
   /*border: 2px solid green;*/
   background-color: rgb(230, 255, 230);
+}
+
+.rules {
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.rules li {
+  list-style: none;
 }
