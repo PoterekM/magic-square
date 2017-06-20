@@ -1,0 +1,16 @@
+// if (newSquare.solved === false) {
+//   console.log(newSquare.solved);
+//   if (newSquare.victory()) {
+//     // console.log(allFilled());
+//     console.log(newSquare.victory());
+//     newSquare.solved = true;
+
+//   } else if (newSquare.solved === true) {
+//     winner = "You win!"
+//     return winner;
+//   };
+// };
+
+// var winner = victory();
+// if (winner === true);
+//   return "You win!";

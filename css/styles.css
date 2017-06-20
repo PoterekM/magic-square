@@ -1,3 +1,9 @@
+body {
+  background-image: url("../img/numbers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 table {
   margin: 200px auto auto auto;
 }
@@ -32,4 +38,14 @@ input::placeholder {
 .right {
   /*border: 2px solid green;*/
   background-color: rgb(230, 255, 230);
+}
+
+.well {
+  width: 300px;
+  height: 100px;
+  margin: 50px auto;
+}
+
+footer {
+  text-align: center;
 }
