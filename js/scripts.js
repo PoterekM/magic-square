@@ -71,7 +71,7 @@ $(document).ready(function() {
       $("input#text1").addClass("right");  // change box border to green
       box1.correct = true;
       box1.full = true;
-      if ((newSquare.totalCorrect === 9) && (allFilled() === true)) {
+      if ((allCorrect() === true) && (allFilled() === true)) {
         $("#win-message").text("Victory!");
       };
     } else {
