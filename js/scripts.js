@@ -4,11 +4,12 @@ var boxesArr = [box1, box2, box3, box4, box5, box6, box7, box8, box9];
 var answers3 = [8, 1, 6, 3, 5, 7, 4, 9, 2];
 
 function Square(boxes, totalCorrect, squareSize, solved) {
-  this.boxes = boxes;
+  this.boxes = boxesArr;
   // this.answer = answer;
   this.totalCorrect = totalCorrect;
   this.squareSize = squareSize;
   this.solved = solved;
+  console.log(this.solved);
 };
 
 function Box(empty, val, answer) {
@@ -17,10 +18,20 @@ function Box(empty, val, answer) {
   this.answer = answer;
 };
 
+
+// Square.prototype.victory = function() {
+//   if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true)) {
+//     this.solved = true;
+//     return this.solved;
+//   };
+// };
+
 Square.prototype.victory = function() {
-  if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true)) {
+  if (box1Win && box2Win && box3Win && box4Win && box5Win && box6Win && box7Win && box8Win && box9Win) {
+    console.log("Box Wins: " + box1Win, box2Win, box3Win, box4Win, box5Win, box6Win, box7Win, box8Win, box9Win);
     this.solved = true;
     return this.solved;
+    console.log(this.solved);
   };
 };
 
@@ -66,14 +77,16 @@ function isCorrect(_val, _answer) {
 /////////////////////line in the sand/////////////////////////
 $(document).ready(function() {
   var text1, text2, text3, text4, text5, text6, text7, text8, text9, winner;
+  var boxesArr;
   var totalCorrect = 0;
-  var newSquare = new Square(boxes3, 0, 3, false);
+  var newSquare = new Square(boxesArr, 0, 3, false);
   console.log("newSquare = " + newSquare);
+
 
   // if (newSquare.totalCorrect !== 9) {
   //   console.log("totalCorrect = " + newSquare.totalCorrect);
 
-  // if (! newSquare.victory()) {
+  if (! newSquare.victory()) {
 
     $("#form1").submit(function(event) {
       event.preventDefault();
@@ -239,12 +252,15 @@ $(document).ready(function() {
       console.log(box9Win);
     });
 
+    // console.log(newSquare.boxes.box2.val);
+    // console.log(newSquare["boxes"]["box2"]["val"]);
   // } else if (newSquare.totalCorrect === 9) {
-  // } else if (newSquare.victory()) {
-  var winner = (newSquare.victory());
-  if (winner) {
+  } else if (newSquare.victory()) {
+  // var winner = (newSquare.victory());
+  // console.log(newSquare.victory());
+  // if (winner) {
     $("#win-message").text("winner");
-    };
+  };
   // };
 
 });

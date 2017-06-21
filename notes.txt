@@ -14,3 +14,66 @@
 // var winner = victory();
 // if (winner === true);
 //   return "You win!";
+
+newSquare.boxes.box2.val
+
+newSquare = {
+  boxes: [
+    box1 = {
+    empty: false;
+    val: 8;
+    answer: 8;
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+
+    box2 = {
+    empty; false;
+    val: 1;
+    answer: 1}
+    },
+  ],
+  totalCorrect: 9,
+  squareSize: 3,
+  solved: true,
+};
