@@ -52,12 +52,13 @@ var box9 = new Box(true, text9, 2);
 
 Square.prototype.victory = function() {
   if (this.totalCorrect === 9) {
-    this.totalCorrect = true;
-    console.log("this.totalCorrect = " + this.totalCorrect);
-    return this.totalCorrect;
+    this.solved = true;
+    console.log("this.solved = " + this.solved);
+    return this.solved;
   } else {
-    console.log("this.totalCorrect = " + this.totalCorrect);
-    return this.totalCorrect;
+    this.solved = false;
+    console.log("this.solved = " + this.solved);
+    return this.solved;
   };
 };
 
