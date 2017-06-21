@@ -6,9 +6,10 @@ var answers3 = [8, 1, 6, 3, 5, 7, 4, 9, 2];
 function Square(boxes, totalCorrect, squareSize, solved) {
   this.boxes = boxesArr;
   // this.answer = answer;
-  this.totalCorrect = totalCorrect;
+  this.totalCorrect = 0;
+  console.log(this.totalCorrect);
   this.squareSize = squareSize;
-  this.solved = solved;
+  this.solved = false;
   console.log(this.solved);
 };
 
@@ -19,23 +20,6 @@ function Box(empty, val, answer) {
 };
 
 
-// Square.prototype.victory = function() {
-//   if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true)) {
-//     this.solved = true;
-//     return this.solved;
-//   };
-// };
-
-Square.prototype.victory = function() {
-  if (box1Win && box2Win && box3Win && box4Win && box5Win && box6Win && box7Win && box8Win && box9Win) {
-    console.log("Box Wins: " + box1Win, box2Win, box3Win, box4Win, box5Win, box6Win, box7Win, box8Win, box9Win);
-    this.solved = true;
-    return this.solved;
-    console.log(this.solved);
-  };
-};
-
-// answers3 = {text1: 8, text2: 1, text3: 6, text4: 3, text5: 5, text6: 7, text7: 4, text8: 9, text9: 2};
 
 var box1 = new Box(true, text1, 8);
 var box2 = new Box(true, text2, 1);
@@ -46,6 +30,39 @@ var box6 = new Box(true, text6, 7);
 var box7 = new Box(true, text7, 4);
 var box8 = new Box(true, text8, 9);
 var box9 = new Box(true, text9, 2);
+
+// Square.prototype.victory = function() {
+//   if ((box1Win === true) && (box2Win === true) && (box3Win === true) && (box4Win === true) && (box5Win === true) && (box6Win === true) && (box7Win === true) && (box8Win === true) && (box9Win === true)) {
+//     this.solved = true;
+//     return this.solved;
+//   };
+// };
+
+// Square.prototype.victory = function() {
+//   if (box1Win && box2Win && box3Win && box4Win && box5Win && box6Win && box7Win && box8Win && box9Win) {
+//     console.log("Box Wins: " + box1Win, box2Win, box3Win, box4Win, box5Win, box6Win, box7Win, box8Win, box9Win);
+//     this.solved = true;
+//     console.log(this.solved);
+//     return this.solved;
+//   } else {
+//     console.log(this.solved);
+//     return this.solved;
+//   };
+// };
+
+Square.prototype.victory = function() {
+  if (this.totalCorrect === 9) {
+    this.totalCorrect = true;
+    console.log("this.totalCorrect = " + this.totalCorrect);
+    return this.totalCorrect;
+  } else {
+    console.log("this.totalCorrect = " + this.totalCorrect);
+    return this.totalCorrect;
+  };
+};
+
+// answers3 = {text1: 8, text2: 1, text3: 6, text4: 3, text5: 5, text6: 7, text7: 4, text8: 9, text9: 2};
+
 
 function isCorrect(_val, _answer) {
   if (_val === _answer) {
@@ -79,14 +96,18 @@ $(document).ready(function() {
   var text1, text2, text3, text4, text5, text6, text7, text8, text9, winner;
   var boxesArr;
   var totalCorrect = 0;
-  var newSquare = new Square(boxesArr, 0, 3, false);
-  console.log("newSquare = " + newSquare);
 
+  var newSquare = new Square(boxesArr, 0, 3, false);
+  console.log(newSquare.totalCorrect);
+  console.log("newSquare = " + newSquare);
 
   // if (newSquare.totalCorrect !== 9) {
   //   console.log("totalCorrect = " + newSquare.totalCorrect);
 
-  if (! newSquare.victory()) {
+  // if (! newSquare.victory()) {
+  //   alert(newSquare.victory());
+
+  do {
 
     $("#form1").submit(function(event) {
       event.preventDefault();
@@ -104,7 +125,7 @@ $(document).ready(function() {
         $("#text1").val("");
       };
       var box1Win = isCorrect(text1, box1.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box1Win);
     });
 
@@ -122,7 +143,7 @@ $(document).ready(function() {
         $("#text2").val("");
       };
       var box2Win = isCorrect(text2, box2.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box2Win);
     });
 
@@ -140,7 +161,7 @@ $(document).ready(function() {
         $("#text3").val("");
       };
       var box3Win = isCorrect(text3, box3.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box3Win);
     });
 
@@ -158,7 +179,7 @@ $(document).ready(function() {
         $("#text4").val("");
       };
       var box4Win = isCorrect(text4, box4.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box4Win);
     });
 
@@ -176,7 +197,7 @@ $(document).ready(function() {
         $("#text5").val("");
       };
       var box5Win = isCorrect(text5, box5.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box5Win);
     });
 
@@ -194,7 +215,7 @@ $(document).ready(function() {
         $("#text6").val("");
       };
       var box6Win = isCorrect(text6, box6.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box6Win);
     });
 
@@ -212,7 +233,7 @@ $(document).ready(function() {
         $("#text7").val("");
       };
       var box7Win = isCorrect(text7, box7.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box7Win);
     });
 
@@ -230,7 +251,7 @@ $(document).ready(function() {
         $("#text8").val("");
       };
       var box8Win = isCorrect(text8, box8.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box8Win);
     });
 
@@ -248,19 +269,20 @@ $(document).ready(function() {
         $("#text9").val("");
       };
       var box9Win = isCorrect(text9, box9.answer);
-      // return totalCorrect;
+      // return newSquare.totalCorrect;
       console.log(box9Win);
     });
 
     // console.log(newSquare.boxes.box2.val);
     // console.log(newSquare["boxes"]["box2"]["val"]);
   // } else if (newSquare.totalCorrect === 9) {
-  } else if (newSquare.victory()) {
+  }
+  while (newSquare.victory()) {
+    alert(newSquare.victory());
   // var winner = (newSquare.victory());
   // console.log(newSquare.victory());
   // if (winner) {
-    $("#win-message").text("winner");
-  };
+  //   $("#win-message").text("winner");
   // };
-
+  };
 });
