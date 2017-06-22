@@ -1,11 +1,99 @@
+/*
+font-family: 'Happy Monkey', cursive;
+font-family: 'Walter Turncoat', cursive;
+font-family: 'Unica One', cursive;
+*/
+
 body {
-  background-image: url("../img/numbers.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(251, 246, 239, 1);
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 68, 204, 0.8);
+}
+
+.jumbotron img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.30;
+}
+
+.jumbotron h1 {
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  color: rgba(251, 246, 239, 1);
+  font-family: 'Unica One', cursive;
+  font-size: 84px;
+}
+
+.jumbotron h2 {
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  color: #b3ccff;
+  font-family: 'Unica One', cursive;
+  font-size: 36px;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(251, 246, 239, 1);
+  margin-bottom: 50px;
+}
+
+.main img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.30;
+}
+
+#rules {
+  padding: 0px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(251, 246, 239, 0.8);
+  z-index: 2;
+}
+
+#rules h3 {
+  font-family: 'Unica One', cursive;
+  font-size: 42px;
+  color: rgba(0, 68, 204, 0.7);
+}
+
+hr {
+  width: 30%;
+  background-color: lightgray;
+  height: 2px;
+  border: 0;
+}
+
+#rules li {
+  list-style: none;
+  font-size: 18px;
+}
+
+#square, #well-container {
+  padding: 0px;
+  position: relative;
+  z-index: 2;
+  color: #000;
 }
 
 table {
-  margin: 200px auto auto auto;
+  margin: 50px auto auto auto;
 }
 
 td {
@@ -40,10 +128,22 @@ input::placeholder {
   background-color: rgb(230, 255, 230);
 }
 
+/*#well-container {
+  display: none;
+}*/
+
 .well {
   width: 300px;
-  height: 100px;
+  height: 140px;
   margin: 50px auto;
+  background-color: rgba(0, 68, 204, 0.7);
+}
+
+h2#win-message {
+  color: rgba(251, 246, 239, 1);
+  font-family: 'Unica One', cursive;
+  font-size: 48px;
+  text-align: center;
 }
 
 footer {

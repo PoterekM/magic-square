@@ -2,6 +2,7 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -10,12 +11,23 @@
   <body>
     <div class="container-fluid">
       <header class="jumbotron">
-        <h1>Magic Square</h1>
+        <img src="img/magic-square-2.jpg" alt="Making a magic square" />
+        <h1>Magic<sup>2</2></h1>
+        <h2>It's all in the numbers</h2>
       </header>
       <div class="container main">
-        <div class="rules">
-          <!-- rules go here -->
-        </div>
+        <img src="img/numbers-transparent.png" alt="floating numbers" />
+        <div id="rules">
+          <h3>Rules</h3>
+          <hr></hr>
+          <ul>
+            <li>All rows and columns must add up to the same number.</li>
+            <li>Digits cannot be repeated.</li>
+            <li>Press enter after each entry.</li>
+            <li>Incorrect entries are displayed in red.</li>
+            <li>Correct entries are displayed with a green background.</li>
+          </ul>
+        </div> <!-- rules closing -->
         <table id="square">
           <thead>
           </thead>
@@ -73,10 +85,12 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <div id="well-container">
-        <div class="well" id="win-message">
+        <div id="well-container">
+          <div class="well">
+            <h2 id="win-message">
 
+            </h2>
+          </div>
         </div>
       </div>
       <footer>&copy; 2017 Jake Ruleaux, Michelle Poterek, Nicole Freed</footer>
