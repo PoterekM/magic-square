@@ -72,6 +72,7 @@ $(document).ready(function() {
       box1.correct = true;
       box1.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -92,6 +93,7 @@ $(document).ready(function() {
       box2.correct = true;
       box2.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -112,6 +114,7 @@ $(document).ready(function() {
       box3.correct = true;
       box3.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -132,6 +135,7 @@ $(document).ready(function() {
       box4.correct = true;
       box4.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -152,6 +156,7 @@ $(document).ready(function() {
       box5.correct = true;
       box5.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -172,6 +177,7 @@ $(document).ready(function() {
       box6.correct = true;
       box6.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -192,6 +198,7 @@ $(document).ready(function() {
       box7.correct = true;
       box7.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -212,6 +219,7 @@ $(document).ready(function() {
       box8.correct = true;
       box8.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
@@ -232,6 +240,7 @@ $(document).ready(function() {
       box9.correct = true;
       box9.full = true;
       if ((allCorrect() === true) && (allFilled() === true)) {
+        $("#well-container").show();
         $("#win-message").text("Victory!");
       };
     } else {
