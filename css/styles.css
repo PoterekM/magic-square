@@ -85,6 +85,14 @@ hr {
   font-size: 18px;
 }
 
+#red {
+  color: rgb(255, 128, 128);
+}
+
+#green {
+  color: rgb(128, 255, 128);
+}
+
 #square, #well-container {
   padding: 0px;
   position: relative;
